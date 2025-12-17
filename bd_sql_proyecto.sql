@@ -1,6 +1,6 @@
 USE bd_spotify;
 
-# GENEROS
+
 CREATE TABLE generos (
   id_genero INTEGER PRIMARY KEY AUTO_INCREMENT,
   nombre_genero VARCHAR(100) UNIQUE
@@ -14,7 +14,7 @@ CREATE TABLE artistas (
  num_reproducciones INTEGER,
 artistas_similares TEXT
 );
-# CANCIONES
+
 CREATE TABLE canciones (
   id_cancion INTEGER PRIMARY KEY AUTO_INCREMENT,
   nombre VARCHAR(255),
@@ -24,9 +24,10 @@ anio INTEGER,
 FOREIGN KEY (id_artista) REFERENCES artistas(id_artista)
 );
 
--- INSERTAR GÉNEROS
+
 INSERT INTO generos (nombre_genero) VALUES 
 ('rock'),
 ('pop'),
 ('indie'),
 ('punk');
+
