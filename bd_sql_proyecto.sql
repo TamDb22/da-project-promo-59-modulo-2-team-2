@@ -1,3 +1,4 @@
+CREATE SCHEMA IF NOT EXISTS bd_spotify;
 USE bd_spotify;
 
 
